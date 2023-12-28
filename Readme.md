@@ -157,7 +157,9 @@ curl http://localhost:8080/sale/filter?orderId=1
 ```
 
 ## System Architecture
-![img_1.png](img_1.png)
+![System Architecture](https://github.com/GoutamVerma/Backend-KiranaStore/assets/66783850/85a534e0-4ebf-4655-a5e0-e81c2f69bba3)
+
 
 ## Entity Relationship Model
-![img.png](img.png)
+![ERModel](https://github.com/GoutamVerma/Backend-KiranaStore/assets/66783850/191b8604-90d7-4c1c-b7ba-0061d0076410)
+
