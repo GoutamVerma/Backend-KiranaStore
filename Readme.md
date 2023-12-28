@@ -113,7 +113,7 @@ The server will start at `localhost:8080`, and you can access the API endpoints 
   - **currencyTyp**e: Currency type
   - Example Request:
   ```bash
-    curl http://localhost:8080/product/filter?category=Electronics&id=1
+    curl http://localhost:8080/product/filter?id=1
   
 ## Sale Controller
 ### Create Sale Order
@@ -121,17 +121,27 @@ The server will start at `localhost:8080`, and you can access the API endpoints 
 - **Method**: POST 
 - **Example Request**:
 ```bash
-curl -X POST http://localhost:8080/sale/createOrder \
--H "Content-Type: application/json" \
--d '{"orderId": 1, "currencyType": "USD", "customerName": "Customer A", "empId": 2}'
- ```
+curl -X POST \
+  http://localhost:8080/sale/createOrder \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "empId": 123,
+    "customerName": "John Doe",
+    "currencyType": "USD",
+    "productQuantities": {
+        "1": 3,
+        "2": 2,
+        "3": 1
+    }
+}'
+```
 
 ### Get All Sale Orders
 - Endpoint: /sale/all
 - Method: GET
 - Example Request:
 ```bash
-curl http://your-api-base-url/sale/all
+curl http://localhost:8080/sale/all
 ```
 ### Filter Sale Orders
 - **Endpoint**: /sale/filter
@@ -143,7 +153,7 @@ curl http://your-api-base-url/sale/all
   - **empId**: Employee ID
 - Example Request:
 ```bash
-curl http://your-api-base-url/sale/filter?orderId=1&customerName=Customer%20A
+curl http://localhost:8080/sale/filter?orderId=1
 ```
 
 ## System Architecture
