@@ -69,16 +69,16 @@ The server will start at `localhost:8080`, and you can access the API endpoints 
        -d "designation=Manager"
 
 ### Get All Employees
-- **Endpoint**: /admin/employee/all_employee
-- **Method**: GET
+- **Endpoint**: `/admin/employee/all_employee`
+- **Method**: `GET`
 - **Example Request**:
     ```bash
     curl http://localhost:8080/admin/employee/all_employee
 
 ## Product Controller
 ### Add New Order
-- **Endpoint**: /product/order
-- **Method**: POST
+- **Endpoint**: `/product/order`
+- **Method**:` POST`
 - **Request Parameters**:
   - **ID**: Product ID
   - **name**: Product name
@@ -97,15 +97,15 @@ The server will start at `localhost:8080`, and you can access the API endpoints 
   -d "currencyType=USD"
 
 ### Get All Products
-- **Endpoint**: /product/all
-- **Method**: GET
+- **Endpoint**: `/product/all`
+- **Method**: `GET`
 - **Example Request**:
   ```bash
   curl http://localhost:8080/product/all
 
 ### Filter Products
-- **Endpoint**: /product/filter
-- **Method**: GET
+- **Endpoint**: `/product/filter`
+- **Method**: `GET`
 - **Request Parameters** (Optional):
   - **category**: Product category
   - **id**: Product ID
@@ -117,8 +117,8 @@ The server will start at `localhost:8080`, and you can access the API endpoints 
   
 ## Sale Controller
 ### Create Sale Order
-- **Endpoint**: /sale/createOrder 
-- **Method**: POST 
+- **Endpoint**: `/sale/createOrder`
+- **Method**: `POST`
 - **Example Request**:
 ```bash
 curl -X POST \
@@ -137,15 +137,15 @@ curl -X POST \
 ```
 
 ### Get All Sale Orders
-- Endpoint: /sale/all
-- Method: GET
+- Endpoint: `/sale/all`
+- Method: `GET`
 - Example Request:
 ```bash
 curl http://localhost:8080/sale/all
 ```
 ### Filter Sale Orders
-- **Endpoint**: /sale/filter
-- **Method**: GET
+- **Endpoint**: `/sale/filter`
+- **Method**: `GET`
 - **Request Parameters (Optional)**:
   - **orderId**: Sale order ID
   - **currencyType**: Currency type
@@ -155,6 +155,7 @@ curl http://localhost:8080/sale/all
 ```bash
 curl http://localhost:8080/sale/filter?orderId=1
 ```
+
 
 ## System Architecture
 ![System Architecture](https://github.com/GoutamVerma/Backend-KiranaStore/assets/66783850/85a534e0-4ebf-4655-a5e0-e81c2f69bba3)
