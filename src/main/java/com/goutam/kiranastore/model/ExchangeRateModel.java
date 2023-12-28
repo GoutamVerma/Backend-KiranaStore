@@ -8,18 +8,15 @@ public class ExchangeRateModel {
     private BigDecimal inr;
     private Timestamp timestamp;
 
-    // Default constructor
     public ExchangeRateModel() {
     }
 
-    // Parameterized constructor
     public ExchangeRateModel(Timestamp timestamp, BigDecimal usd, BigDecimal inr) {
         this.timestamp = timestamp;
         this.inr = inr;
         this.usd = usd;
     }
 
-    // Getter and Setter for 'usd'
     public BigDecimal getUsd() {
         return usd;
     }
@@ -28,7 +25,6 @@ public class ExchangeRateModel {
         this.usd = usd;
     }
 
-    // Getter and Setter for 'inr'
     public BigDecimal getInr() {
         return inr;
     }
@@ -37,7 +33,6 @@ public class ExchangeRateModel {
         this.inr = inr;
     }
 
-    // Getter and Setter for 'timestamp'
     public Timestamp getTimestamp() {
         return timestamp;
     }
