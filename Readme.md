@@ -145,5 +145,7 @@ curl http://your-api-base-url/sale/all
 curl http://your-api-base-url/sale/filter?orderId=1&customerName=Customer%20A
 ```
 
+## Entity Relationship Model
+![img.png](img.png)
 
 
