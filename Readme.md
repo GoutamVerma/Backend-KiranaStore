@@ -2,16 +2,11 @@
 
 This backend service provides APIs for managing employees, products, and sale orders in the KiranaStore application.
 
-## System Architecture
-![img_1.png](img_1.png)
-
-## Entity Relationship Model
-![img.png](img.png)
-
 ## System Requirements
 Ensure that you have the following prerequisites installed on your system:
 - Java 11 or later
 - Maven
+- SpringBoot
 
 ## How to Run
 
@@ -41,7 +36,7 @@ mvn spring-boot:run
 
 The server will start at `localhost:8080`, and you can access the API endpoints as described below.
 
-## Table of Contents (API Endpoints)
+## API Endpoints
 
 
 - [Admin Controller](#admin-controller)
@@ -151,3 +146,8 @@ curl http://your-api-base-url/sale/all
 curl http://your-api-base-url/sale/filter?orderId=1&customerName=Customer%20A
 ```
 
+## System Architecture
+![img_1.png](img_1.png)
+
+## Entity Relationship Model
+![img.png](img.png)
